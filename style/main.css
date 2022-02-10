@@ -1,0 +1,96 @@
+:root {
+  --vermelho: #e50914;
+  --preta: #141414;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*elementos base*/
+body {
+  background: var(--preta);
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  margin-left: 1.1rem;
+  margin-right: 1.1rem;
+}
+
+header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+header .logo {
+  color: var(--vermelho);
+  font-family: "Arial Black", Times;
+  font-size: 40px;
+  cursor: pointer;
+  margin-right: 1rem;
+  margin-top: 5px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #aaa;
+  margin-right: 0px;
+  margin-top: 5px;
+  padding-left: 1rem;
+}
+
+header nav a:hover {
+  color: #fff;
+}
+
+/*filme principal*/
+.filme-principal {
+  font-size: 16px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/img/Vivo.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  height: 400px;
+  background-size: cover;
+}
+.filme-principal .descricao {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 15px;
+  text-align: justify;
+}
+
+.filme-principal .titulo {
+  margin-top: 15px;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.filme-principal .botao {
+  background-color: white;
+  border: none;
+  border-radius: 4px;
+  color: black;
+  padding: 10px;
+  margin-right: 8px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+
+.container {
+  margin-left: 30px;
+  margin-right: 10px;
+}
+
+.filme-principal .container {
+  width: 70%;
+}
